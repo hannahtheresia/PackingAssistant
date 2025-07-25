@@ -1,5 +1,6 @@
 // script.js
 
+
 const form = document.getElementById('trip-form');
 const packingListDiv = document.getElementById('packing-list');
 
@@ -47,7 +48,7 @@ Present the packing list as a clear, bullet-point checklist categorized by:
         'Authorization': `Bearer YOUR_OPENAI_API_KEY`,
       },
       body: JSON.stringify({
-        model: 'gpt-4',
+        model: 'gpt-3.5',
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.7,
         max_tokens: 500,
